@@ -46,9 +46,9 @@ namespace WFA211126
                         "INSERT INTO zoldseg VALUES " +
                         $"('{nev}', {egysegAr});", c).ExecuteNonQuery();
                 }
-                catch (Exception exceptipn)
+                catch (Exception exception)
                 {
-                    MessageBox.Show(exceptipn.Message);
+                    MessageBox.Show(exception.Message);
                 }
 
                 MessageBox.Show("új termék sikeresen rögzítve!");
